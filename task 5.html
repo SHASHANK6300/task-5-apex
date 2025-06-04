@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smartwatch Product Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f2f2f2;
+    }
+    .container {
+      width: 90%; max-width: 1000px;
+      margin: auto; padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .product-card {
+      background: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      display: flex;
+      gap: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+    .product-card img {
+      width: 250px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .product-info {
+      flex: 1;
+    }
+    .product-info h2 {
+      margin-top: 0;
+    }
+    .price {
+      color: green;
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    @media(max-width: 600px) {
+      .product-card {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Smartwatch Store</h1>
+    
+    <div class="product-card">
+      <img src="https://images-static.nykaa.com/media/catalog/product/2/b/2b8ff36BLEONWATCH-BLUE_1.jpg?tr=w-500" alt="Smartwatch" />
+      <div class="product-info">
+        <h2>LEON Smartwatch</h2>
+        <p>Stylish smartwatch with Bluetooth calling, fitness tracking, heart rate monitor and more. Perfect for both work and workouts!</p>
+        <p class="price">₹2,499</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function addToCart() {
+      alert("Product added to cart!");
+    }
+  </script>
+</body>
+</html>
